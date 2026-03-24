@@ -33,9 +33,22 @@ The intended output is usually an implementation-oriented specification that mak
 
 | Path | Role |
 | --- | --- |
-| `SKILL.md` | canonical maintained skill definition |
-| `README.md` | repository overview and usage context |
+| `SKILL.md` | canonical maintained skill definition and source of truth for the skill |
+| `README.md` | repository overview, usage context, and maintenance workflow |
 | `examples/example-spec.md` | minimal sample of the kind of implementation-oriented spec this skill should produce |
+| `.gitignore` | local-hygiene rules for keeping machine-specific files out of the repo |
+
+## Current usage model
+
+This repository is the canonical source for `research-brainstorm`.
+
+The maintained skill definition lives at:
+
+- `SKILL.md`
+
+`claudespace` consumes this repository through the submodule path:
+
+- `skills/research-brainstorm`
 
 ## Current role in claudespace
 
@@ -86,6 +99,5 @@ It is not meant to be the only valid output format, but it anchors the style and
 
 ## Next improvements
 
-- add one example spec output under a future `brainstorming/` or `examples/` directory
 - add a more explicit install/setup note if distribution expands
 - refine the README once the repo has more than the core skill definition
