@@ -35,6 +35,7 @@ The intended output is usually an implementation-oriented specification that mak
 | --- | --- |
 | `SKILL.md` | canonical maintained skill definition |
 | `README.md` | repository overview and usage context |
+| `examples/example-spec.md` | minimal sample of the kind of implementation-oriented spec this skill should produce |
 
 ## Current role in claudespace
 
@@ -73,6 +74,15 @@ A lightweight manual validation path for this repository is:
 2. invoke `/research-brainstorm` in Claude Code on a design question
 3. verify the interaction stays discussion-oriented instead of jumping straight into implementation
 4. verify the result trends toward a spec or implementation plan artifact
+5. compare the result against `examples/example-spec.md` to sanity-check the expected output shape
+
+## Example artifact
+
+A minimal sample output is included at:
+
+- `examples/example-spec.md`
+
+It is not meant to be the only valid output format, but it anchors the style and level of detail this repository is aiming for.
 
 ## Next improvements
 
